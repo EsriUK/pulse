@@ -1,0 +1,37 @@
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//js.arcgis.com/4.7/esri/css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+       var dojoConfig = {
+           has: {
+               "esri-featurelayer-webgl": 1
+           }
+       };
+    </script>
+    <script src="//js.arcgis.com/4.7/"></script>
+    <script src="js/main.js"></script>
+ </head>
+ <body>
+    <div id="viewDiv"></div>
+    <div id="configFs">
+       <p>Enter feature layer URL</p>
+       <p>
+          <input type="text" id="fs-url" value=""  placeholder="Enter value here" />
+       <div id="feature-layer-name">...</div>
+       <p>Select attribute to animate</p>
+       <p>
+          <select id="selection">
+             <option></option>
+          </select>
+          for 
+          <input type="text" id="animation-time" value="" /> seconds
+          <button id="play">►</button>
+       </p>
+       <div id="footer">
+          <div id="github"><a href="//github.com/maplabs/pulse" target="_blank"><img src="images/githubLogo.svg" alt="Italian Trulli"></a></div>
+       </div>
+    </div>
+ </body>
